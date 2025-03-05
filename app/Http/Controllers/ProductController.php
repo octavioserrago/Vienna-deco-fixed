@@ -33,6 +33,11 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product created successfully.');
     }
 
+    public function show(Product $product)
+    {
+        return view('products.show', compact('product'));
+    }
+
     public function edit(Product $product)
     {
         return view('products.edit', compact('product'));
