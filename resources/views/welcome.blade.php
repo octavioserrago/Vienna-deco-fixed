@@ -19,6 +19,7 @@
     @include('layouts.navigation')
     @include('components.hero')
     @include('components.createprocess')
+    @include('layouts.footer', ['footerNavs' => $footerNavs])
 </body>
 </html>
 

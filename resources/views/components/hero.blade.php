@@ -14,7 +14,7 @@
             </p>
             <br class="hidden md:inline lg:hidden">
             <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded bg-rojo text-white">Ver Catalogo</a>
+                <a rel="noopener noreferrer" href="{{ url('/catalogo') }}" class="px-8 py-3 text-lg font-semibold rounded bg-rojo text-white">Ver Catalogo</a>
                 <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded border-grisrojo bg-gray-200 sm:bg-gray-300 md:bg-crema">Consultar por productos personalizados</a>
             </div>
         </div>

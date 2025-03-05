@@ -4,13 +4,12 @@ use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 // Welcome
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
 // Catalogo
 Route::get('/catalogo', [CatalogController::class, 'index'])->name('catalog');
